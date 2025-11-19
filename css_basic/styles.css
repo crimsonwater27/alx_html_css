@@ -16,5 +16,86 @@ article {
 }
 aside {
     flex: 1;
-    overflow-y: auto;
+    overflow-y: auto;    
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+    display: block;
+
+}
+
+header ul {
+    align-items: center;
+}
+
+
+.logo {
+    margin-right: 20px;
+}
+
+header {
+    background: #222; 
+    color: white;
+    padding: 15px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+header a {
+    color: rgb(53, 53, 255);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+article {
+    padding: 20px;
+    background: rgb(0, 0, 0);
+    color: white;
+    border-right: 2px solid #eee;
+}
+
+article a {
+    color: #3640d2;  /* pinkish-red */
+}
+
+aside {
+    background: #ecd2ab;
+    padding: 20px;
+}
+
+footer {
+    background: #222;
+    color: rgb(53, 53, 255);
+    text-align: left;
+    padding: 10px;
+    margin-top: auto;
+}
+
+.learners-table table {
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.learners-table th,
+.learners-table td {
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+}
+
+.learners-table th {
+    background: #1a1919;
+    font-weight: bold;
 }
