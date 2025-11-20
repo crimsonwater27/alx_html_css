@@ -93,7 +93,7 @@ body {
 }
 
 .btn-primary {
-    background: #c44fee;
+    background: #c271ff;
     color: white;
     border: none;
     padding: 15px 40px;
@@ -125,23 +125,19 @@ body {
 
 .hightlight {
     font-weight: bold;
-    color: #c44fee;
+    color: #c271ff;
 }
 
-/* --------------------------------------------------
-   INSTRUCTORS
--------------------------------------------------- */
 .instructors {
     display: flex;
     justify-content: center;
     gap: 40px;
     padding: 80px 20px;
-    background: white;
 }
 
 .instructor-card {
     text-align: center;
-    width: 180px;
+    width: 150px;
 }
 
 .instructor-card img {
@@ -156,14 +152,14 @@ body {
     display: flex;
     align-items: center;
     gap: 40px;
-    background: #4a1e87;
+    background: #c271ff;
     color: white;
     padding: 80px 20px;
     justify-content: center;
 }
 
 .testimonial-img {
-    width: 150px;
+    width: 160px;
     border-radius: 50%;
 }
 
@@ -187,7 +183,7 @@ body {
 }
 
 .tutorials span {
-    color: #c44fee;
+    color: #c271ff;
 }
 
 /* GRID */
@@ -230,13 +226,13 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 45px;
-    height: 45px;
+    width: 64px;
+    height: 64px;
     background: rgba(255, 255, 255, 0.568);
     border-radius: 50%;
     transform: translate(-50%, -50%);
     background-image: url("css_advanced images/play.png");
-    background-size: 50%;
+    background-size: 64%;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -264,13 +260,13 @@ body {
 }
 
 .stars {
-    color: #c44fee;
+    color: #c271ff;
     font-size: 1.1rem;
     letter-spacing: 2px;
 }
 
 .duration {
-    color: #c44fee;
+    color: #c271ff;
     font-weight: bold;
 }
 
