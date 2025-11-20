@@ -1,0 +1,196 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    color: #333;
+    line-height: 1.6;
+}
+
+/* --------------------------------------------------
+   HERO / HEADER
+-------------------------------------------------- */
+.hero {
+    background: #4a1e87;
+    color: white;
+    padding: 40px 20px 120px;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    margin-top: 70px;
+}
+
+.subtitle {
+    margin: 20px 0;
+}
+
+.btn-primary {
+    background: #c44fee;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.hero-tagline {
+    margin-top: 60px;
+    font-size: 2rem;
+}
+
+/* --------------------------------------------------
+   INSTRUCTORS
+-------------------------------------------------- */
+.instructors {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 80px 20px;
+    background: white;
+}
+
+.instructor-card {
+    text-align: center;
+    width: 180px;
+}
+
+.instructor-card img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* --------------------------------------------------
+   TESTIMONIAL
+-------------------------------------------------- */
+.testimonial {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background: #4a1e87;
+    color: white;
+    padding: 80px 20px;
+    justify-content: center;
+}
+
+.testimonial-img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.quote {
+    font-style: italic;
+}
+
+/* --------------------------------------------------
+   POPULAR TUTORIALS
+-------------------------------------------------- */
+.tutorials {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.tutorials h2 span {
+    color: #c44fee;
+}
+
+.tutorial-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: 40px auto 0;
+}
+
+.tutorial-card {
+    background: #fff;
+    padding: 20px;
+}
+
+.tutorial-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+/* --------------------------------------------------
+   MEMBERSHIP
+-------------------------------------------------- */
+.membership {
+    background: #4a1e87;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.membership-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin: 40px auto;
+    max-width: 1100px;
+}
+
+/* --------------------------------------------------
+   FAQ
+-------------------------------------------------- */
+.faq {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+/* --------------------------------------------------
+   FOOTER
+-------------------------------------------------- */
+.footer {
+    background: #0c0f1a;
+    padding: 40px 20px;
+    text-align: left;
+    color: white;
+}
+
+.footer img {
+    width: 150px;
+    margin-bottom: 20px;
+}
