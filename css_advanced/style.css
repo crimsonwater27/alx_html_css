@@ -14,12 +14,54 @@ body {
 /* --------------------------------------------------
    HERO / HEADER
 -------------------------------------------------- */
+.header {
+  padding: 20px 60px;
+}
+
+.nav-logo img {
+  height: 40px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
 .hero {
-    background: #4a1e87;
+    background: #0c0f1a;
     color: white;
     padding: 40px 20px 120px;
     text-align: center;
 }
+
+.hero {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
+        url("css_advanced images/Object.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* controls the height of the hero section */
+    min-height: 90vh;
+
+    /* center content */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    text-align: center;
+}
+
 
 .navbar {
     display: flex;
@@ -42,8 +84,8 @@ body {
 }
 
 .hero-content h1 {
-    font-size: 4rem;
-    margin-top: 70px;
+    font-size: 8rem;
+    margin-top: 0px;
 }
 
 .subtitle {
@@ -64,6 +106,26 @@ body {
 .hero-tagline {
     margin-top: 60px;
     font-size: 2rem;
+}
+
+.hero .navbar {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* IMPORTANT FIX */
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hightlight {
+    font-weight: bold;
+    color: #c44fee;
 }
 
 /* --------------------------------------------------
@@ -112,45 +174,112 @@ body {
 /* --------------------------------------------------
    POPULAR TUTORIALS
 -------------------------------------------------- */
+/* ------------ TUTORIAL SECTION ------------------- */
+
 .tutorials {
     padding: 80px 20px;
     text-align: center;
 }
 
-.tutorials h2 span {
+.tutorials h2 {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+}
+
+.tutorials span {
     color: #c44fee;
 }
 
+/* GRID */
 .tutorial-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 40px;
     max-width: 1200px;
-    margin: 40px auto 0;
+    margin: 0 auto;
 }
 
+/* CARD */
 .tutorial-card {
-    background: #fff;
-    padding: 20px;
+    background: white;
+    padding: 0 10px 20px;
+    text-align: left;
 }
 
-.tutorial-card img {
+.tutorial-card h3 {
+    margin-top: 15px;
+    font-size: 1.2rem;
+}
+
+.tutorial-card p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* THUMBNAIL WITH PLAY BUTTON */
+.tutorial-thumbnail {
+    position: relative;
+}
+
+.tutorial-thumbnail img {
     width: 100%;
     border-radius: 10px;
 }
 
-.author {
+.play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 45px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.568);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("css_advanced images/play.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* AUTHOR ROW */
+.author-row {
     display: flex;
     align-items: center;
     gap: 10px;
     margin-top: 15px;
 }
 
+.author-row img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+/* FOOTER ROW */
+.tutorial-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.stars {
+    color: #c44fee;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+}
+
+.duration {
+    color: #c44fee;
+    font-weight: bold;
+}
+
+
 /* --------------------------------------------------
    MEMBERSHIP
 -------------------------------------------------- */
 .membership {
-    background: #4a1e87;
+    background: #071629;
     color: white;
     padding: 80px 20px;
     text-align: center;
@@ -185,12 +314,38 @@ body {
 -------------------------------------------------- */
 .footer {
     background: #0c0f1a;
-    padding: 40px 20px;
-    text-align: left;
+    padding: 60px 20px;
+    text-align: center;
     color: white;
 }
 
-.footer img {
-    width: 150px;
-    margin-bottom: 20px;
+.footer-container{
+    max-width: 1200px;
+    margin: 0% auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.footer-logo img {
+    height: 50px;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-links img {
+    width: 40px;
+    height: 40px;
+}
+
+.footer-copy {
+    margin-top: 20px;
+    color: #c0c0c0;
+    font-size: 0.9rem;
 }
